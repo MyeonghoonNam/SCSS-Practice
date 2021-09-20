@@ -1,0 +1,8 @@
+@use "../your-style/main.scss" as your;
+
+.my-style {
+  position: relative;
+  border: 4px solid your.$var-primary;
+
+  @include your.mix-square(200px);
+}
