@@ -1,0 +1,13 @@
+.box {
+  width: 100px;
+  height: 200px;
+
+  // console.log()와 유사
+  // @debug 'Hello SCSS!';
+
+  // console.warn()과 유사
+  // @warn 'Hello SCSS!';
+
+  // throw를 통한 오류 생성과 유사
+  @error 'Hello SCSS!';
+}
