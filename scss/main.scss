@@ -6,9 +6,20 @@
   @import "http://google.com/variables.scss";
 */
 
-@import './variables.scss';
+// @import './variables.scss';
+
+// .main {
+//   background-color: $primary;
+//   border: 4px solid $success;
+// }
+
+// @use 네임스페이스 활용이 가능한 모듈화 제공
+@use './variables.scss' as var;
+@use './mixins';
 
 .main {
-  background-color: $primary;
-  border: 4px solid $success;
+  background-color: var.$primary;
+  border: 4px solid var.$success;
+
+  @include mixins.square();
 }

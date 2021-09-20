@@ -1,6 +1,16 @@
+@charset "UTF-8";
+/*
+  아래 처럼 url 함수와 css 확장자, http,https와 같은 url로  import시에는 css 파일 반환시 컴파일 후 import 구문이 직접 명시가 이루어지므로 주의해야 한다.
+
+  @import url("./variables.scss"); 
+  @import "./variables.css";
+  @import "http://google.com/variables.scss";
+*/
 .main {
   background-color: orange;
   border: 4px solid yellowgreen;
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
